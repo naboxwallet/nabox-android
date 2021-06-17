@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff9fafc"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="切换账户"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@mipmap/dialog_close"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="16dp"
+        android:background="@color/textcolor_black_no3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:background="#fff2f2f4"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/wallet_list"
+                android:layout_marginBottom="90dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+
+                android:src="@mipmap/icons_add"
+                android:layout_width="30dp"
+                android:id="@+id/iv_add"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="19dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choice_net"
+                android:textColor="#ff8f95a8"
+                android:textSize="12sp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/chain_list"
+                android:layout_marginTop="5dp"
+                android:minHeight="200dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

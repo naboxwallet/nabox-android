@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/rb_home"
+            android:button="@null"
+            android:paddingTop="5dp"
+            android:text="@string/wallet"
+            android:drawablePadding="3dp"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_home"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/rb_text_color"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingTop="5dp"
+            android:drawablePadding="3dp"
+            android:button="@null"
+            android:id="@+id/rb_activity"
+            android:drawableTop="@drawable/rb_activity"
+            android:text="@string/activitys"
+            android:textSize="12sp"
+            android:textColor="@color/rb_text_color"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:textSize="12sp"
+            android:textColor="@color/rb_text_color"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_user"
+            android:id="@+id/rb_user"
+            android:text="@string/user"
+            android:layout_height="match_parent"/>
+    </RadioGroup>
+
+
+</LinearLayout>

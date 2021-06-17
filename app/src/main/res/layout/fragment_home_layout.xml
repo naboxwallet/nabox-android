@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+
+        <!--  复用的标题栏 -->
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="20dp"
+                android:visibility="visible"
+                android:id="@+id/iv_manage"
+                android:src="@mipmap/icon_manage"
+                android:layout_height="20dp" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/textcolor_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="72dp"
+            android:singleLine="true"
+            android:text="@string/wallet"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="20dp"
+            android:id="@+id/iv_scan"
+            android:src="@mipmap/icon_screen"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="70dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_wallet_name"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/textcolor_black_3"
+                android:text="@string/null_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_toRightOf="@id/tv_wallet_name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/tv_amount"
+                android:text="@string/null_content"
+                android:textStyle="bold"
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:checked="true"
+            android:button="@null"
+            android:textColor="@color/home_rb_color"
+            android:background="@drawable/rb_checked"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/rb_coin_1"
+            android:textSize="14sp"
+            android:text="NULS"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_height="40dp"/>
+
+
+        <RadioButton
+            android:button="@null"
+            android:textColor="@color/home_rb_color"
+            android:background="@drawable/rb_checked"
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:id="@+id/rb_coin_2"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="ETH"
+            android:textStyle="bold"
+            android:layout_height="40dp"/>
+
+        <RadioButton
+            android:button="@null"
+            android:textColor="@color/home_rb_color"
+            android:background="@drawable/rb_checked"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:id="@+id/rb_coin_3"
+            android:gravity="center"
+            android:text="Nerve"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_height="40dp"/>
+
+        <RadioButton
+            android:button="@null"
+            android:textColor="@color/home_rb_color"
+            android:background="@drawable/rb_checked"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:id="@+id/rb_coin_4"
+            android:gravity="center"
+            android:text="BSC"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_height="40dp"/>
+        <RadioButton
+            android:button="@null"
+            android:textColor="@color/home_rb_color"
+            android:background="@drawable/rb_checked"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:id="@+id/rb_coin_5"
+            android:gravity="center"
+            android:text="Heco"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="40dp"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:id="@+id/home_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+
+<resources>
+
+
+    <dimen name="margin32" >32dp</dimen>
+    <dimen name="margin16" >16dp</dimen>
+    <dimen name="margin8" >8dp</dimen>
+    <dimen name="textsize24" >24sp</dimen>
+    <dimen name="textsize22" >22sp</dimen>
+    <dimen name="textsize20" >20sp</dimen>
+    <dimen name="textsize16" >16sp</dimen>
+    <dimen name="textsize18" >18sp</dimen>
+    <dimen name="textsize14" >14sp</dimen>
+    <dimen name="textsize13" >13sp</dimen>
+
+
+
+</resources>

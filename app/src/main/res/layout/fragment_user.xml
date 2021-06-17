@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_user"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@mipmap/png_my_bg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:text="@string/Personal_Center"
+            android:textSize="24sp"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:layout_width="match_parent"
+            app:srlEnablePureScrollMode="true"
+            app:srlEnableOverScrollDrag="true"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:id="@+id/layout_manage_wallet"
+        android:layout_height="64dp">
+
+        <TextView
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/icon_manage_wallet"
+            android:text="@string/wallet_manage"
+            android:drawablePadding="12dp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_chevron_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+            <RelativeLayout
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/layout_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:drawableLeft="@mipmap/user_contact"
+                    android:text="@string/Contacts"
+                    android:drawablePadding="12dp"
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_chevron_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/layout_setting"
+                android:layout_height="64dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:drawableLeft="@mipmap/user_setting"
+                    android:text="@string/setting"
+                    android:drawablePadding="12dp"
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_chevron_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/layout_about"
+            android:layout_height="64dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:drawableLeft="@mipmap/user_about"
+                android:text="@string/about_us"
+                android:drawablePadding="12dp"
+                android:textColor="@color/textcolor_black_3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_chevron_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:visibility="gone"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/layout_play"
+                android:layout_height="64dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:drawableLeft="@mipmap/user_setting"
+                    android:text="@string/setting"
+                    android:drawablePadding="12dp"
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_chevron_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/emptyview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

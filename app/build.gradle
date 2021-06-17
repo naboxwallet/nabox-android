@@ -1,0 +1,144 @@
+ apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.nuls.naboxpro"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 3
+        versionName "1.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'languages/en.properties'
+        exclude 'META-INF/spring.schemas'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/spring.tooling'
+        exclude 'META-INF/spring.handlers'
+        exclude 'META-INF/license.txt'
+    }
+
+    //默认apk名字 alpha beta release
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "Nabox_${variant.versionName}.apk"
+        }
+    }
+
+    greendao {
+        daoPackage 'com.nuls.naboxpro.db' // 设置DaoMaster、DaoSession、Dao 包名
+        schemaVersion 1 //当前数据库版本
+        targetGenDir 'src/main/java'    //设置DaoMaster、DaoSession、Dao目录
+    }
+//    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //刷新
+    implementation  'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
+    implementation  'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
+    implementation "com.google.android.material:material:1.0.0"
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+//https://github.com/square/retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+//解析器 主要处理具体对象、jsonObject、jsonArray 包含okhttp、gson等 自带retrofit:2.3.0
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-navi:2.1.0'
+
+    /*依赖RxLifecycle*/
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+//解析器 处理String boolean 等基本类型 包含okhttp、gson等 自带retrofit:2.3.0
+    implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+//    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    // heterogeneous tool 异构链 跨链 工具
+    // heterogeneous tool 异构链 跨链 工具
+//    implementation 'network.nerve:heterogeneous-tool:1.0.17-android-SNAPSHOT'//测试
+    implementation 'network.nerve:heterogeneous-tool:1.1.0-android'//正试
+
+    //下载框架
+    implementation 'com.liulishuo.filedownloader:library:1.7.7'
+// nuls sdk
+//    implementation 'io.nuls.v2:sdk4j-jdk8:1.1.13-android-SNAPSHOT'//测试
+    implementation 'io.nuls.v2:sdk4j-jdk8:1.2.0-android'//正试
+
+// nerve sdk
+//    implementation 'network.nerve:nerve-sdk4j:1.0.11-android-SNAPSHOT'//测试
+//    implementation 'network.nerve:nerve-sdk4j:1.1.0-android'//正试
+    implementation 'network.nerve:nerve-sdk4j:1.0.13-android-SNAPSHOT'//正试
+    implementation 'com.mapzen:on-the-road:1.3.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+//使用：https://github.com/li-xiaojun/XPopup/wiki/1.-介绍
+    implementation 'com.lxj:xpopup:1.8.10'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    implementation 'com.tencent:mmkv:1.0.22'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    //钱包样式选择
+    implementation 'com.github.wenchaosong:Banner:2.3.11'
+    implementation project(path: ':DFileSelector')
+    implementation 'com.alibaba:fastjson:1.1.71.android'
+    implementation 'org.greenrobot:greendao:3.3.0'
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'jp.wasabeef:glide-transformations:4.+'
+    //手势解锁
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.blankj:utilcodex:1.30.6'
+    implementation 'com.wangnan:gesturelockview:1.0.2'
+//    implementation group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+    // 基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+// fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+// kotlin扩展（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'
+    //zxing
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.3.6'
+    //流式布局
+    implementation 'com.google.android:flexbox:1.0.0'
+
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+
+    <include
+
+        layout="@layout/base_title_layout"/>
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="47dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+       android:gravity="center"
+        android:text="@string/draw_an_unlock_pattern"
+        android:textSize="19sp"
+        android:textColor="@color/textcolor_black_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textColor="@color/textcolor_black_3"
+        android:textSize="14sp"
+        android:layout_marginTop="21dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/keep_your_password_in_mind"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.wangnan.library.GestureLockView
+        android:id="@+id/gesture_view"
+        android:layout_marginTop="50dp"
+        app:line_thickness="4dp"
+        android:layout_gravity="center_horizontal"
+        app:radius_ratio="0.5"
+        android:layout_width="300dp"
+        app:press_color="@color/main"
+        android:layout_height="300dp" />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

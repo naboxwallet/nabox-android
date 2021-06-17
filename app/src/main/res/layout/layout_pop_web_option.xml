@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/tvRefresh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_web_refresh"
+                android:gravity="center_horizontal"
+                android:text="@string/refresh"
+                android:textSize="@dimen/dp_14" />
+
+            <TextView
+                android:id="@+id/tvCopyUrl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_web_copy_url"
+                android:gravity="center_horizontal"
+                android:text="@string/copy_url"
+                android:textSize="@dimen/dp_14" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#ededed" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textSize="@dimen/dp_16" />
+    </LinearLayout>
+
+</LinearLayout>

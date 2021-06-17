@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:clickable="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="228dp">
+
+
+
+        <ImageView
+            android:src="@mipmap/dialog_close"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_keystore"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/keystore_import"
+            style="@style/MyButton"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_marginLeft="@dimen/margin32"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+        <TextView
+            android:id="@+id/tv_mnemonic"
+            android:visibility="gone"
+            android:layout_marginTop="144dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mnemonic_word_import"
+            style="@style/MyButton"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_marginLeft="@dimen/margin32"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+<!--        暂时隐藏 私钥导入-->
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/tv_personal_key"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/personal_key_import"
+
+            style="@style/MyButton"
+            android:clickable="true"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_marginLeft="@dimen/margin32"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

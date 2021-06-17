@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <include
+
+        layout="@layout/base_title_layout"></include>
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:text="@string/use_personal_key_import"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/textcolor_black_3"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:lineSpacingExtra="5dp"
+        android:gravity="center"
+        android:layout_height="44dp"
+        android:text="@string/use_personal_key_import_hint"
+        android:textColor="@color/textcolor_black"
+        android:textSize="13sp"
+        />
+
+
+    <EditText
+        android:textSize="14sp"
+        android:gravity="top|left"
+        android:hint="@string/personal_ket_content"
+        android:id="@+id/edit_personal_key"
+        android:paddingLeft="17dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="17dp"
+        android:textColorHint="@color/textcolor_gray"
+        android:background="@drawable/shape_black_no3"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:textColorHint="#AAB2C9"
+            android:hint="@string/set_wallet_password"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:drawableRight="@mipmap/icon_danger"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:visibility="invisible"
+            android:drawablePadding="5dp"
+            android:id="@+id/tv_psw_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:background="#E9EBF3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:id="@+id/tv_hint1"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_reset_password"
+            android:textColorHint="#AAB2C9"
+            android:hint="@string/repeat_password"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/chedkbox_psw_checked"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:button="@drawable/password_open_checked"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:background="#E9EBF3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:id="@+id/tv_hint2"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:clickable="true"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/main"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/what_is_personal_key"
+        android:id="@+id/tv_what_is_personalKay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:gravity="center"
+        android:id="@+id/btn_next"
+        android:text="@string/next"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_marginLeft="@dimen/margin32"
+        style="@style/GreenButton"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+</LinearLayout>

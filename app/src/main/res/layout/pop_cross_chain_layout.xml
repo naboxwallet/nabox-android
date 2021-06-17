@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+<!--  这个页面有复用  -->
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="400dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="@string/choice_asset"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/iv_close"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@mipmap/dialog_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/textcolor_black_no3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:id="@+id/list_assets"-->
+<!--            android:layout_height="match_parent"/>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout1"
+
+            android:layout_height="55dp">
+            <View
+
+                android:layout_width="match_parent"
+                android:background="@color/textcolor_black_no3"
+                android:layout_height="0.5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="NULS"
+                    android:textSize="14sp"
+                    android:minWidth="70dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/tv_nuls_address"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <View
+
+                android:layout_width="match_parent"
+                android:background="@color/textcolor_black_no3"
+                android:layout_height="0.5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="Nerve"
+                    android:textSize="14sp"
+                    android:minWidth="70dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/tv_nerve_address"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <View
+
+                android:layout_width="match_parent"
+                android:background="@color/textcolor_black_no3"
+                android:layout_height="0.5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="Ethereum"
+                    android:textSize="14sp"
+                    android:minWidth="70dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/tv_eth_address"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <View
+
+                android:layout_width="match_parent"
+                android:background="@color/textcolor_black_no3"
+                android:layout_height="0.5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="BSC"
+                    android:textSize="14sp"
+                    android:minWidth="70dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/tv_bsc_address"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <View
+
+                android:layout_width="match_parent"
+                android:background="@color/textcolor_black_no3"
+                android:layout_height="0.5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="Heco"
+                    android:textSize="14sp"
+                    android:minWidth="70dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/tv_heco_address"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <View
+
+                android:layout_width="match_parent"
+                android:background="@color/textcolor_black_no3"
+                android:layout_height="0.5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="OKExChain"
+                    android:textSize="14sp"
+                    android:minWidth="70dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textColor="@color/textcolor_black_3"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/tv_okex_address"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

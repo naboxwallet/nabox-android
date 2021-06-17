@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9FAFC"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/card_layout"
+    android:transitionName="share_cardview"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/SwipeMenuLayout"
+        android:layout_height="90dp">
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/iv_token"
+                android:layout_centerVertical="true"
+                android:layout_height="45dp" />
+
+
+
+            <TextView
+                android:layout_marginLeft="68dp"
+                android:textColor="@color/textcolor_black_3"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:id="@+id/tv_token_name"
+                android:hint="NULS"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="68dp"
+                android:textColor="#53B8A9"
+                android:textSize="11sp"
+                android:text="@string/null_content"
+                android:paddingLeft="4dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingRight="4dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/shape53b8a9"
+                android:id="@+id/tv_register_chain"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/main"
+                android:textStyle="bold"
+                android:id="@+id/tv_nuls_num"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:maxLines="1"
+                android:textSize="12dp"
+                android:textColor="@color/textcolor_gray"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="51dp"
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

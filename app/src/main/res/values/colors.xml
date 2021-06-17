@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#53B8A9</color>
+    <color name="colorPrimaryDark">#53B8A9</color>
+    <color name="colorAccent">#53B8A9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="touming">#00000000</color>
+    <color name="red">#F14545</color>
+    <color name="yellow">#FFBC09</color>
+    <color name="fff9fafc">#fff9fafc</color>
+    <color name="fff2f2f4">#fff2f2f4</color>
+    <!-- 灰色背景色 -->
+    <color name="gray_bg">#636366</color>
+    <!--   定义Nabox颜色值 -->
+    <!--主色调-->
+    <color name="main">#53B8A9</color>
+    <color name="color_8F95A8">#8F95A8</color>
+    <!--绿色 基本 -->
+    <color name="green_button_basic">#53B8A9</color>
+    <color name="color_skin1">#53B8A9</color>
+    <color name="color_skin2">#599b72</color>
+    <color name="color_skin3">#257cc1</color>
+    <color name="color_skin4">#292e39</color>
+    <color name="color_skin5">#5270b5</color>
+    <!--绿色 点击状态 -->
+    <color name="green_button_click">#43A193</color>
+    <!--绿色 不可点击 -->
+    <color name="green_button_disabled">#7053b8a9</color>
+    <!--橙色 基本 -->
+    <color name="orange_button_basic">#FD775A</color>
+    <!--橙色 点击状态 -->
+    <color name="orange_button_click">#FF6543</color>
+    <!--橙色 不可点击 -->
+    <color name="orange_button_disabled">#70FD775A</color>
+    <!--黑色 -->
+    <color name="black">#000000</color>
+    <!--黑色 -->
+    <color name="textcolor_black">#616262</color>
+    <!--黑色 -->
+    <color name="textcolor_gray">#8F95A8</color>
+    <!--黑色 -->
+    <color name="textcolor_black_no2">#CCCED8</color>
+    <!--黑色 -->
+    <color name="textcolor_black_no3">#E9EBF3</color>
+    <!--黑色 -->
+    <color name="textcolor_black_no4">#F7F7F7</color>
+
+    <!--   Nabox颜色值  完成-->
+
+    <color name="textcolor_black_3">#333333</color>
+
+    <color name="textcolor_warning">#f14545</color>
+</resources>

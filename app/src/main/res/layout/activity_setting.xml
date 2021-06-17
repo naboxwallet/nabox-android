@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+
+        layout="@layout/base_title_layout"></include>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_language_settings"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+
+        <TextView
+            android:text="@string/language_settings"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_marginRight="12dp"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/icon_chevron_right"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_language"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:background="#ffe9ebf3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/layout_common_currency_unit"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+
+        <TextView
+            android:text="@string/common_currency_unit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_marginRight="12dp"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/icon_chevron_right"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_currency"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:background="#ffe9ebf3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_safety_protection"
+        android:layout_height="75dp">
+
+
+        <TextView
+            android:text="@string/safety_protection"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_marginRight="12dp"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/icon_chevron_right"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:background="#ffe9ebf3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>

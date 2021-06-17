@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. Theme.MaterialComponents.Light.NoActionBar  Theme.AppCompat.Light.DarkActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--绿色 按钮的部分属性-->
+    <style name="GreenButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="android:background">@drawable/green_button</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="MyButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/button_selector_3</item>
+        <item name="android:textColor">@color/color_button3_selsetor</item>
+    </style>
+
+
+
+    <style name="LoadingDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="TextShadow" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowColor">#20000000</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+</resources>

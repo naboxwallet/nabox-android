@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <include
+        layout="@layout/base_title_layout"></include>
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:text="@string/select_network"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/textcolor_black_3"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:id="@+id/layout_choiceChain"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:singleLine="true"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:textSize="15sp"
+            android:id="@+id/edit_coin_type"
+            android:hint="@string/please_select_network"
+            android:maxLength="50"
+            android:gravity="center_vertical|left"
+            android:textColorHint="#BAC0D3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow_drop_down"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:text="@string/address"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/textcolor_black_3"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <EditText
+            android:singleLine="true"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:textSize="15sp"
+            android:id="@+id/edit_address"
+            android:hint="@string/enter_address"
+            android:maxLength="50"
+            android:gravity="center_vertical|left"
+            android:textColorHint="#BAC0D3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+        <ImageButton
+
+            android:id="@+id/iv_zxing"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_screen"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#E9EBF3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:text="@string/name"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/textcolor_black_3"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <EditText
+            android:maxLines="1"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:textSize="15sp"
+            android:id="@+id/edit_name"
+            android:hint="@string/enter_name"
+            android:maxLength="20"
+            android:gravity="center_vertical|left"
+            android:textColorHint="#BAC0D3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#E9EBF3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+
+    <Button
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/complete"
+        android:id="@+id/btn_complete"
+        android:layout_marginTop="70dp"
+        style="@style/GreenButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</LinearLayout>

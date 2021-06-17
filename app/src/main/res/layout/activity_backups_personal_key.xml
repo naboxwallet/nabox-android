@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+
+        layout="@layout/base_title_layout"></include>
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/png_beifensiyao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:text="@string/warning"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginLeft="@dimen/margin16"
+        android:textColor="@color/textcolor_warning"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textSize="13sp"
+        android:lineSpacingExtra="8dp"
+        android:paddingBottom="@dimen/margin16"
+        android:paddingTop="@dimen/margin16"
+        android:paddingRight="@dimen/margin16"
+        android:paddingLeft="@dimen/margin16"
+        android:background="@drawable/shape_warning"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_width="match_parent"
+        android:textColor="@color/textcolor_warning"
+        android:text="@string/warning_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/GreenButton"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/know_danger_next"
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+
+        />
+
+
+
+
+
+
+
+</LinearLayout>

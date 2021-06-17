@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/base_title_layout"/>
+
+
+    <TextView
+        android:textSize="13sp"
+        android:lineSpacingExtra="8dp"
+        android:paddingBottom="@dimen/margin16"
+        android:paddingTop="@dimen/margin16"
+        android:paddingRight="@dimen/margin16"
+        android:paddingLeft="@dimen/margin16"
+        android:background="@drawable/shape_warning"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:id="@+id/tv_hint_1"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_width="match_parent"
+        android:textColor="@color/textcolor_warning"
+        android:text="Tips：Nabox的划转功能是通过跨链交易实现，因此需消耗交易手续费，划转到账的时间取决于进行跨链交易的两条链上的交易确认时间"
+        android:layout_height="wrap_content" />
+
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_marginTop="32dp"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:background="@drawable/shape_trans"
+       android:layout_width="match_parent"
+       android:layout_height="120dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="From"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/textcolor_black_3"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:text="To"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/textcolor_black_3"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="0dp"/>
+
+
+        </LinearLayout>
+
+
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:id="@+id/layout_from"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="0dp">
+               <TextView
+
+                   android:layout_centerVertical="true"
+                   android:textColor="#333333"
+                   android:hint="@string/null_content"
+                   android:textSize="16sp"
+                   android:id="@+id/tv_from_chain"
+                   android:textStyle="bold"
+                   android:minWidth="90dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                    android:layout_toRightOf="@id/tv_from_chain"
+                   android:layout_centerVertical="true"
+                   android:textColor="@color/main"
+                   android:hint="@string/null_content"
+                   android:textSize="16sp"
+                   android:id="@+id/tv_from_adress"
+                   android:textStyle="bold"
+                   android:minWidth="80dp"
+                   android:singleLine="true"
+                   android:ellipsize="middle"
+                   android:drawablePadding="8dp"
+                   android:layout_marginRight="8dp"
+                   android:drawableRight="@mipmap/icon_chevron_right"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </RelativeLayout>
+
+           <View
+               android:layout_marginRight="16dp"
+               android:background="@color/textcolor_black_no3"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"/>
+           <RelativeLayout
+               android:layout_weight="1"
+               android:id="@+id/layout_to"
+               android:layout_width="match_parent"
+               android:layout_height="0dp">
+               <TextView
+
+                   android:layout_centerVertical="true"
+                   android:textColor="#333333"
+                   android:hint="@string/null_content"
+                   android:textSize="16sp"
+                   android:id="@+id/tv_to_chain"
+                   android:textStyle="bold"
+                   android:minWidth="90dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_toRightOf="@id/tv_to_chain"
+                   android:layout_centerVertical="true"
+                   android:textColor="@color/main"
+                   android:hint="@string/null_content"
+                   android:textSize="16sp"
+                   android:id="@+id/tv_to_adress"
+                   android:textStyle="bold"
+                   android:minWidth="80dp"
+                   android:singleLine="true"
+                   android:ellipsize="middle"
+                   android:drawablePadding="8dp"
+                   android:layout_marginRight="8dp"
+                   android:drawableRight="@mipmap/icon_chevron_right"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </RelativeLayout>
+
+
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="13sp"
+            android:text="@string/amount"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textcolor_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:id="@+id/tv_use_amount"
+            android:hint="@string/null_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textcolor_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/available"
+            android:layout_toLeftOf="@id/tv_use_amount"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_trans"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:minWidth="60dp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_network"
+            android:textStyle="bold"
+            android:hint="@string/choice_asset"
+            android:textColor="@color/black"
+            android:drawableRight="@mipmap/arrow_drop_down"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/textcolor_black_no3"
+            android:layout_height="20dp"/>
+        <EditText
+            android:background="@null"
+            android:textSize="15sp"
+            android:hint="@string/transfer_amount"
+            android:paddingLeft="8dp"
+            android:id="@+id/tv_num"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:digits="0.123456789"
+            android:fontFamily="sans-serif"
+            android:inputType="numberDecimal"
+            android:textColor="@color/textcolor_black_3"
+            android:textColorHint="#BAC0D3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/textcolor_black_no3"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/main"
+            android:textSize="15sp"
+            android:id="@+id/tv_all"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:text="全部"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="13sp"
+            android:text="@string/service_charge"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/textcolor_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/progress_fee"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/layout_fee_level"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="低"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="0"
+                android:textSize="12sp"
+                android:id="@+id/tv_fee_low"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="中"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="0"
+                android:textSize="12sp"
+                android:id="@+id/tv_fee_nomal"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="高"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="0"
+                android:id="@+id/tv_fee_high"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_payfee"
+            android:layout_marginLeft="16dp"
+            android:hint="@string/null_content"
+            android:textColor="@color/textcolor_black_3"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:id="@+id/layout_accelerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <CheckBox
+                android:layout_marginLeft="20dp"
+                android:id="@+id/check_accelerate"
+                android:background="@null"
+                android:button="@drawable/check_selector_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textcolor_black_3"
+                android:text="@string/accelerate"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        style="@style/GreenButton"
+        android:visibility="gone"
+        android:id="@+id/btn_auth"
+        android:textColor="@color/white"
+        android:text="@string/authorize"
+        android:layout_height="45dp"/>
+
+    <Button
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        style="@style/GreenButton"
+        android:id="@+id/btn_next"
+        android:textColor="@color/white"
+        android:text="@string/next"
+        android:layout_height="45dp"/>
+
+</LinearLayout>

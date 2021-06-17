@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+<!--  这个页面有两个activity在用哦  不要乱改  -->
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <!--  复用的标题栏 -->
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="72dp"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+      <ImageView
+          android:id="@+id/tv_add"
+          android:clickable="true"
+          android:layout_alignParentRight="true"
+          android:background="@mipmap/icons_add"
+          android:textSize="30sp"
+          android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:srlEnablePureScrollMode="true"
+        app:srlEnableOverScrollDrag="true"
+        android:layout_height="match_parent">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_wallet"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

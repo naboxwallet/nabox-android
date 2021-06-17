@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginTop="70dp"
+        android:id="@+id/tv_content1"
+        android:textColor="@color/textcolor_black_3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:text="当前检测到您系统语言为：中文"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/textcolor_black"
+        android:textSize="16sp"
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginTop="@dimen/margin16"
+        android:text="System language detected:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin8"
+        android:layout_marginLeft="@dimen/margin32"
+        android:text="Chinese"
+        android:textColor="@color/textcolor_black"
+        android:textSize="16sp"
+        android:id="@+id/tv_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/textcolor_black_3"
+        android:textSize="18sp"
+        android:text="是否需要更换为以下语言"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Preferred language:"
+        android:layout_marginLeft="@dimen/margin32"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RadioGroup
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:id="@+id/rg_choicelan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_english"
+            android:textSize="16sp"
+            android:textColor="@color/color_choicelanguage"
+            android:button="@null"
+            android:text="English"
+            android:drawableRight="@drawable/radiobutton_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:background="#E9EBF3"
+            android:layout_height="1dp"></View>
+        <RadioButton
+            android:textSize="16sp"
+            android:textColor="@color/color_choicelanguage"
+            android:layout_marginTop="20dp"
+            android:text="简体中文"
+            android:id="@+id/eb_chinese"
+            android:button="@null"
+            android:drawableRight="@drawable/radiobutton_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:background="#E9EBF3"
+            android:layout_height="1dp"></View>
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:text="@string/next"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        style="@style/GreenButton"
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+
+
+</LinearLayout>

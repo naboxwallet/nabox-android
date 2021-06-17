@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!-- 币详情 item -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        android:layout_height="90dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:text="转入"
+                android:paddingLeft="12dp"
+                android:gravity="center"
+                android:paddingRight="12dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/tv_transtype"
+                android:background="@drawable/shape_transaction_out"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"/>
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:layout_alignBottom="@id/tv_transtype"
+                android:text="NULS"
+                android:textSize="14sp"
+                android:id="@+id/tv_coinName"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/textcolor_black_3"
+                android:layout_toRightOf="@id/tv_transtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/tv_date"
+                android:layout_alignBottom="@id/tv_coinName"
+                android:textColor="#8F95A8"
+                android:text="2020/20/20"
+                android:layout_marginBottom="1dp"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/tv_coinName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:text="+123456456"
+                android:textStyle="bold"
+                android:id="@+id/tv_amount"
+                android:layout_alignBottom="@id/tv_coinName"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/tv_transtype"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="100dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="From"
+                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:text="NULSdsakjdlasjdlksajkds"
+                        android:textSize="12sp"
+                        android:textColor="@color/textcolor_black_3"
+                        android:singleLine="true"
+                        android:ellipsize="middle"
+                        android:id="@+id/tv_fromAddress"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="To"
+                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:text="NULSdsakjdlasjdlksajkds"
+                        android:textSize="12sp"
+                        android:id="@+id/tv_toaddress"
+                        android:textColor="@color/textcolor_black_3"
+                        android:singleLine="true"
+                        android:ellipsize="middle"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:id="@+id/layout_wallet"
+    android:layout_height="100dp">
+
+
+<!--  切换钱包和链弹窗左侧list  item布局  -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/textcolor_black"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="dsakjdjklasjskd"
+            android:id="@+id/tv_walletName"
+            android:ellipsize="middle"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#8F95A8"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_amount"
+            android:ellipsize="middle"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

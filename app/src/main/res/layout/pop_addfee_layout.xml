@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/shape_white"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:paddingBottom="21dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/add_pay_Fee"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/textcolor_black_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="#8F95A8"
+            android:text="@string/already_pay_fee"
+            android:textSize="14sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_alread_pay"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="24dp"
+            android:layout_width="match_parent"
+            android:textColor="#333333"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="24dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="#8F95A8"
+            android:text="@string/recommed_fee"
+            android:textSize="14sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_recommend_fee"
+            android:layout_marginLeft="25dp"
+            android:textColor="#333333"
+            android:layout_marginRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="24dp"
+        android:layout_height="30dp">
+
+
+        <TextView
+            android:textColor="#8F95A8"
+            android:text="@string/add_pay_Fee"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/tv_add_fee"
+            android:textColor="#333333"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="0"
+            android:textColorHint="#AAB2C9"
+            android:layout_marginRight="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:textColor="#333333"
+            android:text="NVT"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="24dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <View
+                android:background="#E9EBF3"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            style="@style/MyButton"
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:layout_height="40dp"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            style="@style/GreenButton"
+            android:id="@+id/btn_sure"
+            android:text="@string/sure"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

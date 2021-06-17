@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/base_title_layout"
+        ></include>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/main"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:hint="@string/null_content"
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/null_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/textcolor_black_no4"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp"></View>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/layout_fromchain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/textcolor_gray"
+                    android:textSize="14sp"
+                    android:text="FromChain"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/tv_formChain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/layout_tochain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/textcolor_gray"
+                    android:textSize="14sp"
+                    android:text="ToChain"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/tv_to_chain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/textcolor_gray"
+                    android:textSize="14sp"
+                    android:text="@string/miners_fees"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="100dp"
+                    android:clickable="true"
+                    android:hint="@string/null_content"
+                    android:focusable="true"
+                    android:id="@+id/tv_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="@string/add_fee"
+                    android:focusable="true"
+                    android:id="@+id/add_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/textcolor_gray"
+                    android:textSize="14sp"
+                    android:text="@string/type"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:hint="@string/null_content"
+                    android:focusable="true"
+                    android:id="@+id/tv_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/textcolor_gray"
+                    android:textSize="14sp"
+                    android:text="@string/date"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:hint="@string/null_content"
+                    android:focusable="true"
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/textcolor_black_no4"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/textcolor_gray"
+                    android:textSize="14sp"
+                    android:text="From"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_chain1"
+                        android:textColor="#8F95A8"
+                        android:textSize="12sp"
+                        android:hint="@string/null_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/null_content"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_address1"
+                        android:textColor="#ff58baab"
+                        android:textSize="14sp"
+                        />
+
+
+
+                    <TextView
+                        android:layout_marginTop="17dp"
+                        android:textColor="#8F95A8"
+                        android:textSize="12sp"
+                        android:text="TXID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_txid1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/null_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#ff58baab"
+                        android:textSize="14sp"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/textcolor_gray"
+                    android:textSize="14sp"
+                    android:text="To"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_chain2"
+                        android:textColor="#8F95A8"
+                        android:textSize="12sp"
+                        android:text="@string/null_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/null_content"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_address2"
+                        android:textColor="#ff58baab"
+                        android:textSize="14sp"
+                        />
+
+
+
+                    <TextView
+                        android:layout_marginTop="17dp"
+
+                        android:textColor="#8F95A8"
+                        android:textSize="12sp"
+                        android:text="TXID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_txid2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/null_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#ff58baab"
+                        android:textSize="14sp"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

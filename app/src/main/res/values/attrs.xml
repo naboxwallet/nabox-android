@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleBarView">
+        <attr name="backText" format="string|reference" />
+        <attr name="titleText" format="string|reference" />
+        <attr name="forwardText" format="string|reference" />
+        <attr name="backDrawable" format="reference" />
+        <attr name="forwardDrawable" format="reference" />
+        <attr name="backTextSize" format="dimension" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="forwardTextSize" format="dimension" />
+        <attr name="mTitleTextColor" format="reference" />
+        <attr name="mBackTextColor" format="reference" />
+        <attr name="mForwardTextColor" format="reference" />
+    </declare-styleable>
+
+    <!--圆形波浪-->
+    <declare-styleable name="WaveView">
+        <!--圆颜色-->
+        <attr name="wave_color" format="color" />
+        <!--中心圆图片半径-->
+        <attr name="wave_coreImageRadius" format="integer" />
+        <!--波浪圆之间间距,值越小越窄-->
+        <attr name="wave_width" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CountDownButton">
+        <attr name="millisinfuture" format="integer" />
+        <attr name="countdowninterva" format="integer" />
+        <attr name="normalColor" format="color" />
+        <attr name="countDownColor" format="color" />
+        <attr name="normalTextColor" format="color" />
+        <attr name="countDownTextColor" format="color" />
+        <attr name="normalText" format="string" />
+        <attr name="countDownText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BeautyBox">
+        <attr name="checked" format="boolean" />
+        <attr name="open" format="boolean" />
+        <attr name="checked_model" format="integer">
+            <flag name="radio" value="1" />
+            <flag name="open" value="2" />
+            <flag name="open_double" value="3" />
+        </attr>
+        <attr name="drawable_open_normal" format="reference" />
+        <attr name="drawable_open_checked" format="reference" />
+        <attr name="drawable_close_normal" format="reference" />
+        <attr name="drawable_close_checked" format="reference" />
+        <attr name="text_normal" format="string" />
+        <attr name="text_double" format="string" />
+        <attr name="textColor_normal" format="reference|color" />
+        <attr name="textColor_checked" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="discreteSeekBarStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DiscreteSeekBar">
+        <attr name="dsb_min" format="integer|dimension" />
+        <attr name="dsb_max" format="integer|dimension" />
+        <attr name="dsb_value" format="integer|dimension" />
+        <attr name="dsb_mirrorForRtl" format="boolean" />
+        <attr name="dsb_allowTrackClickToDrag" format="boolean" />
+        <attr name="dsb_progressColor" format="color|reference" />
+        <attr name="dsb_trackColor" format="color|reference" />
+        <attr name="dsb_indicatorTextAppearance" format="reference" />
+        <attr name="dsb_indicatorColor" format="color|reference" />
+        <attr name="dsb_indicatorElevation" format="dimension" />
+        <attr name="dsb_indicatorFormatter" format="string|reference" />
+        <attr name="dsb_rippleColor" format="color|reference" />
+        <attr name="dsb_indicatorPopupEnabled" format="boolean" />
+        <attr name="dsb_trackHeight" format="integer|dimension" />
+        <attr name="dsb_trackBaseHeight" format="integer|dimension" />
+        <attr name="dsb_scrubberHeight" format="integer|dimension" />
+        <attr name="dsb_thumbSize" format="integer|dimension" />
+        <attr name="dsb_indicatorSeparation" format="integer|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="camera_focus">
+        <attr name="focus_width" format="integer|dimension" />
+        <attr name="focus_height" format="integer|dimension" />
+        <attr name="focus_scale" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="LazyViewPager">
+        <attr name="init_lazy_item_offset" format="float" />
+    </declare-styleable>
+
+    <!--文字描边-->
+    <declare-styleable name="StrokeTextView">
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innnerColor" format="color|reference" />
+    </declare-styleable>
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="vericationCodeView">
+        <!--输入框的数量-->
+        <attr name="vcv_et_number" format="integer" />
+        <!--输入类型-->
+        <attr name="vcv_et_inputType">
+            <enum name="number" value="0" />
+            <enum name="numberPassword" value="1" />
+            <enum name="text" value="2" />
+            <enum name="textPassword" value="3" />
+        </attr>
+        <!--输入框的宽度-->
+        <attr name="vcv_et_width" format="dimension|reference" />
+        <!--输入框文字颜色-->
+        <attr name="vcv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="vcv_et_text_size" format="dimension|reference" />
+        <!--输入框背景-->
+        <attr name="vcv_et_bg" format="reference" />
+        <!--光标样式-->
+        <attr name="vcv_et_cursor" format="reference" />
+        <!--是否隐藏光标-->
+        <attr name="vcv_et_cursor_visible" format="boolean" />
+        <!--输入框间距，不输入则代表平分-->
+        <attr name="vcv_et_spacing" format="dimension|reference" />
+
+    </declare-styleable>
+    <declare-styleable name="PasswordInputView">
+        <attr name="passwordLength" format="integer" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderRadius" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="passwordWidth" format="dimension" />
+        <attr name="passwordColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RoundRectLayout">
+        <attr name="round" format="dimension" />
+        <attr name="leftTopRound" format="dimension" />
+        <attr name="rightTopRound" format="dimension" />
+        <attr name="leftBottomRound" format="dimension" />
+        <attr name="rightBottomRound" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="tag_gravity">
+            <enum name="LEFT" value="-1"></enum>
+            <enum name="CENTER" value="0"></enum>
+            <enum name="RIGHT" value="1"></enum>
+        </attr>
+        <attr name="maxLine" format="integer"></attr>
+        <attr name="lineSpacing" format="dimension"></attr>
+        <attr name="itemSpacing" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="VerifyEditText">
+        <!--输入框数量-->
+        <attr name="inputCount" format="integer" />
+        <!--输入框间距-->
+        <attr name="inputSpace" format="dimension" />
+        <!--下划线厚度-->
+        <attr name="underlineHeight" format="dimension" />
+        <!--输入框文本大小-->
+        <attr name="mTextSize" format="dimension" />
+        <!--下划线选中的颜色-->
+        <attr name="focusColor" format="color" />
+        <!--        文字颜色-->
+        <attr name="mTextColor" format="color" />
+        <!--下划线未选中的颜色-->
+        <attr name="defaultColor" format="color" />
+        <!--下划线距文本的距离-->
+        <attr name="underlineSpace" format="dimension" />
+        <!--光标-->
+        <attr name="cursorDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DYLoadingView">
+        <attr name="radius1" format="dimension" />
+        <attr name="radius2" format="dimension" />
+        <attr name="rtlScale" format="float" />
+        <attr name="ltrScale" format="float" />
+        <attr name="color1" format="color" />
+        <attr name="color2" format="color" />
+        <attr name="mixColor" format="color" />
+        <attr name="duration" format="integer" />
+        <attr name="pauseDuration" format="integer" />
+        <attr name="gap" format="dimension" />
+        <attr name="scaleStartFraction" format="float" />
+        <attr name="scaleEndFraction" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CustomRatingBar">
+        <attr name="zrb_rating" format="integer" />
+        <attr name="zrb_star_count" format="integer" />
+        <attr name="zrb_click_enable" format="boolean" />
+        <attr name="zrb_star_dimension" format="dimension" />
+        <attr name="zrb_horizontal_spacing" format="dimension" />
+        <attr name="zrb_normal_star_res" format="reference" />
+        <attr name="zrb_checked_star_res" format="reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="LoadingView">
+        <!--进度条初始颜色-->
+        <attr name="progressColor" format="string" />
+        <!--进度条最小宽度即初始宽度-->
+        <attr name="minProgressWidth" format="dimension" />
+        <!--view最小宽度-->
+        <attr name="minWidth" format="dimension" />
+        <!--view最小高度-->
+        <attr name="minHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="StarView">
+        <attr name="star_size" format="dimension" />
+        <attr name="star_spacing" format="dimension" />
+        <attr name="star_level" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="VerifyCodeView">
+        <attr name="verifyCodeLength" format="integer" />
+        <attr name="verifyCodeMode" format="integer" />
+        <attr name="verifyCodePadding" format="dimension" />
+        <attr name="verifyCodeBorderColor" format="color" />
+        <attr name="verifyCodeBorderFocusColor" format="color" />
+        <attr name="verifyCodeBorderWidth" format="dimension" />
+        <attr name="verifyCodeTextSize" format="dimension" />
+        <attr name="verifyCodeCursorFlashTime" format="integer" />
+        <attr name="isVerifyCodeCursorEnable" format="boolean" />
+        <attr name="verifyCodeCursorColor" format="color" />
+        <attr name="verifyCodeCursorWidth" format="dimension" />
+        <attr name="verifyCodeTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorfulCircleView">
+        <attr name="fill_color_1" format="color" />
+        <attr name="fill_color_2" format="color" />
+        <attr name="fill_color_3" format="color" />
+        <attr name="fill_color_4" format="color" />
+        <attr name="fill_mode" format="enum">
+            <enum name="single" value="0" />
+            <enum name="dual" value="1" />
+            <enum name="triple" value="2" />
+            <enum name="quadruple" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CirclePercentView">
+        <!--圆弧背景色-->
+        <attr name="circleBgColor" format="reference" />
+        <!--圆弧进度条颜色-->
+        <attr name="circleProgressColor" format="reference" />
+        <!--圆弧宽度-->
+        <attr name="circle_Radius" format="integer" />
+        <!--渐变开始颜色-->
+        <attr name="circleStartColor" format="reference" />
+        <!--渐变结束颜色-->
+        <attr name="circleEndColor" format="reference" />
+        <!--是否渐变-->
+        <attr name="circleIsGradient" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

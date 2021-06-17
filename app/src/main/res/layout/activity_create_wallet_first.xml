@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/base_title_layout"></include>
+
+
+
+    <TextView
+        android:textSize="13sp"
+        android:paddingLeft="28dp"
+        android:gravity="center_vertical"
+        android:paddingRight="18dp"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/password_hint"
+        android:background="#FFF3E0"
+        android:layout_marginTop="20dp"
+        android:textColor="#D39C73"
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:textColor="@color/textcolor_black_3"
+        android:textColorHint="#AAB2C9"
+        android:hint="@string/wallet_name"
+        android:textSize="15sp"
+        android:maxLength="12"
+        android:layout_marginTop="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_height="1dp"
+        android:background="#E9EBF3"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:text="最多可使用15字符名称"
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:id="@+id/tv_hint1"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_password"
+            android:textColorHint="#AAB2C9"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColor="@color/textcolor_black_3"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_marginLeft="@dimen/margin32"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:drawableRight="@mipmap/icon_danger"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:visibility="invisible"
+            android:drawablePadding="5dp"
+            android:id="@+id/tv_psw_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginRight="@dimen/margin32"
+        android:background="#E9EBF3"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"/>
+
+    <TextView
+
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:id="@+id/tv_hint2"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_repeat_name"
+            android:textColorHint="#AAB2C9"
+            android:hint="@string/repeat_password"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_marginLeft="@dimen/margin32"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/chedkbox_psw_checked"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:button="@drawable/password_open_checked"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginRight="@dimen/margin32"
+        android:background="#E9EBF3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:id="@+id/tv_hint3"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:textSize="13sp"
+            android:id="@+id/checkbox_agree"
+            android:textColor="#AAB2C9"
+            android:button="@drawable/check_selector_layout"
+            android:paddingLeft="8dp"
+            android:text="@string/read_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:clickable="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="13sp"
+            android:textColor="#4EB9A9"
+            android:text="@string/service_sule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_marginLeft="@dimen/margin32"
+        style="@style/GreenButton"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:text="@string/agree_and_create_wallet"
+        android:layout_height="44dp" />
+
+
+</LinearLayout>

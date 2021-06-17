@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- 绿色的按钮  -->
+
+    <item android:state_enabled="false" android:drawable="@drawable/green_button_disabled"></item>
+    <item android:state_enabled="true" android:drawable="@drawable/green_button_selector"></item>
+
+
+
+
+
+</selector>

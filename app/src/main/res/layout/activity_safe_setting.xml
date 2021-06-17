@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/base_title_layout"
+        ></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/layout_safety_protection"
+        android:layout_height="75dp">
+
+
+        <TextView
+
+            android:text="@string/graphic_unlocking"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+      <CheckBox
+          android:button="@drawable/switch_selsetor"
+          android:id="@+id/checkbox"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="16dp"
+          android:layout_alignParentRight="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

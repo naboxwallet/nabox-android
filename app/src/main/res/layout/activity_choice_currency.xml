@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 选择货币-->
+
+    <include
+        layout="@layout/base_title_layout"></include>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/textcolor_black_3"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:text="@string/choice_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:id="@+id/rg_choicelan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RadioButton
+            android:id="@+id/rb_usd"
+            android:textSize="16sp"
+            android:textColor="@color/color_choicelanguage"
+            android:button="@null"
+            android:text="USD"
+            android:checked="true"
+            android:drawableRight="@drawable/radiobutton_selector"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:background="#E9EBF3"
+            android:layout_height="1dp"></View>
+        <RadioButton
+            android:textSize="16sp"
+            android:textColor="@color/color_choicelanguage"
+            android:layout_marginTop="20dp"
+            android:text="人民币"
+            android:id="@+id/eb_rmb"
+            android:button="@null"
+            android:drawableRight="@drawable/radiobutton_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:background="#E9EBF3"
+            android:layout_height="1dp"></View>
+    </RadioGroup>
+
+
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        style="@style/GreenButton"
+        android:layout_marginTop="255dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="@dimen/margin32"
+        android:layout_marginLeft="@dimen/margin32"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

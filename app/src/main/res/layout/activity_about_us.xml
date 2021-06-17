@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+
+        layout="@layout/base_title_layout"></include>
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:src="@mipmap/user_about_nabox"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+
+
+    <View
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:background="#ffe9ebf3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+
+
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_log"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textcolor_black_3"
+            android:text="@string/version_log"
+            android:layout_marginRight="@dimen/margin16"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:drawableRight="@mipmap/icon_chevron_right"
+            android:layout_height="70dp" />
+
+
+
+    <View
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:background="#ffe9ebf3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/check_update"
+        android:layout_height="70dp">
+
+
+        <TextView
+
+            android:text="@string/updated_version"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:drawableRight="@mipmap/icon_chevron_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor_black_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

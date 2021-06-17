@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="50dp">
+
+    <!--  复用的标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+
+
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/textcolor_black_3"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="72dp"
+        android:id="@+id/tv_title"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

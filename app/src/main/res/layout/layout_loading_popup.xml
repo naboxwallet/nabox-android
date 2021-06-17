@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.nuls.naboxpro.ui.widget.DYLoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:color1="@color/main"
+        app:color2="@color/white"
+        app:mixColor="@android:color/transparent"/>
+
+    <!--    <android.support.v4.widget.ContentLoadingProgressBar-->
+    <!--        android:id="@+id/loading_progress"-->
+    <!--        android:layout_width="23dp"-->
+    <!--        android:layout_height="23dp"-->
+    <!--            style="?android:attr/progressBarStyleSmall"-->
+    <!--        android:layout_gravity="center" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_loading_des"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="7dp"-->
+    <!--        android:text="正在加载..."-->
+    <!--        android:textColor="@color/text_white"-->
+    <!--        android:textSize="@dimen/font_small" />-->
+
+</LinearLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:background="@color/green_button_basic"
+        android:layout_height="50dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/rl_finish"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_white_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:text="@string/assets_detail"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refresh_layout"
+        app:srlEnableLoadMoreWhenContentNotFull="false"
+        android:layout_height="match_parent">
+
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            app:srlAccentColor="@color/textcolor_black_no4"
+            app:srlEnableLastTime="false"
+            app:layout_srlBackgroundColor="@color/main"
+            app:srlPrimaryColor="@color/green_button_basic"
+            app:srlTextSizeTitle="13sp" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:background="@color/main"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"></View>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="6dp"
+                        android:transitionName="share_cardview"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="16sp"
+                            android:id="@+id/tv_name"
+                            android:textStyle="bold"
+                            android:textColor="@color/textcolor_black_3"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="80dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/tv_nums"
+                                android:textColor="#ff53b8a9"
+                                android:textSize="24sp"
+                                />
+                            <TextView
+                                android:id="@+id/tv_money"
+                                android:layout_marginTop="35dp"
+                                android:layout_width="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ff8f95a8"
+                                android:textSize="16sp"
+                                />
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/textcolor_black_no4"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="150dp"
+                            android:layout_height="1dp"></View>
+                        <LinearLayout
+                            android:layout_marginTop="150dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="62dp">
+
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="@string/Frozen"
+                                    android:textColor="#BAC0D3"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="36dp"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:id="@+id/tv_frozen_amount"
+                                    android:gravity="center"
+                                    android:textColor="@color/textcolor_gray"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_marginTop="16dp"
+                                android:background="@color/textcolor_black_no4"
+                                android:layout_marginBottom="16dp"
+                                android:layout_height="match_parent"></View>
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="@string/available"
+                                    android:textColor="#BAC0D3"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textColor="@color/textcolor_gray"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="36dp"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/tv_available_amount"
+                                    android:singleLine="true"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="70dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_height="70dp" />
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/list_history"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            app:srlAccentColor="@color/textcolor_black_3"
+            app:srlEnableLastTime="false"
+            app:srlTextSizeTitle="13sp" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+       <Button
+           android:layout_marginLeft="16dp"
+           style="@style/GreenButton"
+           android:layout_weight="1"
+           android:id="@+id/btn_crossfer"
+           android:layout_gravity="center_vertical"
+           android:layout_width="0dp"
+            android:text="@string/crosschain_transfer"
+           android:layout_marginRight="8dp"
+           android:layout_height="40dp"/>
+
+        <Button
+            android:layout_marginLeft="8dp"
+            style="@style/GreenButton"
+            android:layout_weight="1"
+            android:id="@+id/btn_transfer"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:text="@string/transfer_accounts"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
